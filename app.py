@@ -11,7 +11,6 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import pdfkit
 
 # 1. กำหนด theme และ layout
 st.set_page_config(page_title="AVA Property Scraper", layout="wide")
@@ -125,11 +124,5 @@ if start_button:
 
         # ปุ่มดาวน์โหลด PDF
         html_table = df.to_html(index=False)
-        pdf = pdfkit.from_string(html_table, False)
-        st.download_button(
-            label="📄 ดาวน์โหลด PDF",
-            data=pdf,
-            file_name="property_data.pdf",
-            mime="application/pdf"
         )
 
