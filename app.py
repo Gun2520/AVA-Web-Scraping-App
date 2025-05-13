@@ -7,10 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/13p5LwzxZjXEdCxUjiW1Bm1W_njzCoYSZ
 """
 
-!pip install streamlit pandas plotly pdfkit
-!apt-get update -qq
-!apt-get install -y -qq wkhtmltopdf
-
 # ติดตั้งไลบรารีที่จำเป็น
 import streamlit as st
 import pandas as pd
